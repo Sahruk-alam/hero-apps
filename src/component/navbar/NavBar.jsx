@@ -2,10 +2,13 @@ import React from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from '../../assets/logo.png'
 import contribute from '../../assets/contribute.png'
+import { IoHomeOutline } from "react-icons/io5";
+import { FaAppStore } from "react-icons/fa";
+import { MdInstallDesktop } from "react-icons/md";
 const NavBar = () => {
     return (
        <div>
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100 shadow-sm p-3">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -28,11 +31,11 @@ const NavBar = () => {
   </div>
   <div className="navbar-center hidden md:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><NavLink to='/'>Home</NavLink></li>
+      <li><NavLink to='/'><IoHomeOutline />Home</NavLink></li>
       <li>
-           <NavLink to='/apps'>Apps</NavLink>
+           <NavLink to='/apps'><FaAppStore />Apps</NavLink>
       </li>
-      <li><NavLink to='/installation'>Installation</NavLink></li>
+      <li><NavLink to='/installation'><MdInstallDesktop />Installation</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
