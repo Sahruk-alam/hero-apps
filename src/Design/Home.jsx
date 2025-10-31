@@ -3,7 +3,7 @@ import Build from './Build';
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-gray-200'>
             <Build></Build>
             home
         </div>

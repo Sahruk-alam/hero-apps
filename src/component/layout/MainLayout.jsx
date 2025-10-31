@@ -8,10 +8,11 @@ import NavBar from '../navbar/Navbar';
 const MainLayout = () => {
     return (
         <div>
-            <div className='flex flex-col min-h-scree'>
-                <NavBar/>
+            <NavBar/>
+            <div className='flex flex-col min-h-screen'>
+               <Outlet/> 
             </div>
-            <Outlet/>
+            
             <Footer/>
         </div>
     );
