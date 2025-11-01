@@ -12,6 +12,7 @@ const Footer = () => {
           <img className='h-8 w-8' src={logo} alt="Hero.io logo" />
           <span className="text-lg">Hero.io</span>
         </Link>
+       
       </nav>
   <nav>
     <h6 className="footer-title text-white">Services</h6>
