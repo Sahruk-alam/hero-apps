@@ -1,146 +1,291 @@
+
 [
   {
     "id": 1,
     "title": "Facebook",
     "companyName": "Meta Platforms",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
-    "description": "A social networking platform to connect and share with friends.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/512px-Facebook_Logo_%282019%29.png",
+    "description": "Connect and share with friends and communities.",
     "size": 68,
-    "reviews": 150000000,
+    "reviews": 1500000,
     "ratingAvg": 4.2,
-    "downloads": 5000000000,
+    "downloads": "5M",
     "ratings": [
-      { "name": "1 star", "count": 1200000 },
-      { "name": "2 star", "count": 800000 },
-      { "name": "3 star", "count": 2000000 },
-      { "name": "4 star", "count": 4000000 },
-      { "name": "5 star", "count": 9000000 }
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 40000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 120000 }
     ]
   },
   {
     "id": 2,
     "title": "Instagram",
     "companyName": "Meta Platforms",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg",
-    "description": "Photo and video sharing social network.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/512px-Instagram_logo_2016.svg.png",
+    "description": "Photo & video sharing social network.",
     "size": 55,
-    "reviews": 70000000,
+    "reviews": 900000,
     "ratingAvg": 4.4,
-    "downloads": 3000000000,
+    "downloads": "4M",
     "ratings": [
-      { "name": "1 star", "count": 900000 },
-      { "name": "2 star", "count": 500000 },
-      { "name": "3 star", "count": 1000000 },
-      { "name": "4 star", "count": 3500000 },
-      { "name": "5 star", "count": 8000000 }
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 140000 }
     ]
   },
   {
     "id": 3,
-    "title": "TikTok",
+    "title": "Pomocat-Cute Pomodoro Timer",
     "companyName": "ByteDance",
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
-    "description": "A platform for short-form mobile videos.",
+    "image": "../src/assets/demo-app (1).webp",
+    "description": "Short video social media platform.",
     "size": 89,
-    "reviews": 90000000,
+    "reviews": 1250000,
     "ratingAvg": 4.3,
-    "downloads": 3500000000,
+    "downloads": "7M",
     "ratings": [
-      { "name": "1 star", "count": 1100000 },
-      { "name": "2 star", "count": 600000 },
-      { "name": "3 star", "count": 1600000 },
-      { "name": "4 star", "count": 4200000 },
-      { "name": "5 star", "count": 7800000 }
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 14000 },
+      { "name": "3 star", "count": 42000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 150000 }
     ]
   },
   {
     "id": 4,
     "title": "YouTube",
     "companyName": "Google",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg",
-    "description": "Video-sharing and streaming platform.",
+    "image": "../src/assets/demo-app (2).webp",
+    "description": "Video streaming and sharing platform.",
     "size": 110,
-    "reviews": 80000000,
+    "reviews": 2000000,
     "ratingAvg": 4.5,
-    "downloads": 10000000000,
+    "downloads": "9M",
     "ratings": [
-      { "name": "1 star", "count": 1000000 },
-      { "name": "2 star", "count": 700000 },
-      { "name": "3 star", "count": 1800000 },
-      { "name": "4 star", "count": 6000000 },
-      { "name": "5 star", "count": 12000000 }
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 90000 },
+      { "name": "5 star", "count": 200000 }
     ]
   },
   {
     "id": 5,
     "title": "WhatsApp",
     "companyName": "Meta Platforms",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
-    "description": "Instant messaging and voice/video calling.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png",
+    "description": "Messaging and voice/video call app.",
     "size": 40,
-    "reviews": 130000000,
+    "reviews": 1300000,
     "ratingAvg": 4.6,
-    "downloads": 5000000000,
+    "downloads": "12M",
     "ratings": [
-      { "name": "1 star", "count": 300000 },
-      { "name": "2 star", "count": 350000 },
-      { "name": "3 star", "count": 800000 },
-      { "name": "4 star", "count": 2500000 },
-      { "name": "5 star", "count": 9000000 }
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 180000 }
     ]
   },
   {
     "id": 6,
     "title": "Snapchat",
     "companyName": "Snap Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg",
-    "description": "Messaging app focused on short-lived visual communication.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png",
+    "description": "Photo & video message sharing.",
     "size": 60,
-    "reviews": 35000000,
+    "reviews": 650000,
     "ratingAvg": 4.1,
-    "downloads": 1500000000,
+    "downloads": "6M",
     "ratings": [
-      { "name": "1 star", "count": 500000 },
-      { "name": "2 star", "count": 400000 },
-      { "name": "3 star", "count": 1100000 },
-      { "name": "4 star", "count": 2500000 },
-      { "name": "5 star", "count": 5000000 }
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 35000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 120000 }
     ]
   },
   {
     "id": 7,
-    "title": "Twitter (X)",
+    "title": "Focus Plant:Forest",
     "companyName": "X Corp.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg",
-    "description": "Microblogging and social interaction platform.",
+    "image": "../src/assets/demo-app (2).webp",
+    "description": "This productivity app focuses on eliminating repetitive manual tasks by introducing intelligent automation. ",
     "size": 80,
-    "reviews": 55000000,
+    "reviews": 800000,
     "ratingAvg": 3.8,
-    "downloads": 2000000000,
+    "downloads": "4.5M",
     "ratings": [
-      { "name": "1 star", "count": 1500000 },
-      { "name": "2 star", "count": 1200000 },
-      { "name": "3 star", "count": 2500000 },
-      { "name": "4 star", "count": 3000000 },
-      { "name": "5 star", "count": 3500000 }
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 80000 }
     ]
   },
   {
     "id": 8,
     "title": "Spotify",
     "companyName": "Spotify AB",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
-    "description": "Music streaming and audio platform.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/512px-Spotify_icon.svg.png",
+    "description": "Music streaming app.",
     "size": 75,
-    "reviews": 60000000,
+    "reviews": 900000,
     "ratingAvg": 4.5,
-    "downloads": 1500000000,
+    "downloads": "7M",
     "ratings": [
-      { "name": "1 star", "count": 600000 },
-      { "name": "2 star", "count": 300000 },
-      { "name": "3 star", "count": 1200000 },
-      { "name": "4 star", "count": 3500000 },
-      { "name": "5 star", "count": 5000000 }
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Google Maps",
+    "companyName": "Google",
+    "image": "../src/assets/google-maps-icon-free-png.webp",
+    "description": "GPS navigation and live location service.",
+    "size": 95,
+    "reviews": 1200000,
+    "ratingAvg": 4.4,
+    "downloads": "5.5M",
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 95000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Gmail",
+    "companyName": "Google",
+    "image": "../src/assets/mail-gmail.webp",
+    "description": "Email communication app.",
+    "size": 40,
+    "reviews": 1500000,
+    "ratingAvg": 4.5,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "image": "../src/assets/demo-app (3).webp",
+    "description": "Movies & TV streaming service.",
+    "size": 75,
+    "reviews": 1000000,
+    "ratingAvg": 4.3,
+    "downloads": "4.9M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 35000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Daily Planner",
+    "companyName": "Developed by productive.io",
+    "image": "../src/assets/demo-app (6).webp",
+    "description": "This app is built to solve the chaos of scattered documents across devices and platforms. It acts as a secure digital hub where you can store, organize, and access files with ease.",
+    "size": 95,
+    "reviews": 900000,
+    "ratingAvg": 4.2,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 16000 },
+      { "name": "3 star", "count": 40000 },
+      { "name": "4 star", "count": 80000 },
+      { "name": "5 star", "count": 150000 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Telegram",
+    "companyName": "Telegram FZ LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png",
+    "description": "Secure cloud messaging platform.",
+    "size": 40,
+    "reviews": 650000,
+    "ratingAvg": 4.4,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 55000 },
+      { "name": "5 star", "count": 170000 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Striving: Pomodoro",
+    "companyName": "eveloped by productive.io",
+    "image": "../src/assets/demo-app (4).webp",
+    "description": "Voice & chat for communities.",
+    "size": 80,
+    "reviews": 550000,
+    "ratingAvg": 4.5,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 50000 },
+      { "name": "5 star", "count": 140000 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "OffScreen - Less Screen",
+    "companyName": "Developed by productive.io",
+    "image": "../src/assets/demo-app (5).webp",
+    "description": "Video conferencing & meetings.",
+    "size": 120,
+    "reviews": 1200000,
+    "ratingAvg": 4.4,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 35000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/512px-Pinterest-logo.png",
+    "description": "Discover & save creative ideas.",
+    "size": 65,
+    "reviews": 450000,
+    "ratingAvg": 4.6,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 22000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 140000 }
     ]
   }
 ]
