@@ -12,7 +12,7 @@ if(loading){
   return <Loading></Loading>
 }
   return (
-    <div className="bg-gray-200 ">
+    <div className="bg-gray-100 ">
       <Build></Build>
       <div className="my-9"> 
         <h2 className="text-5xl font-bold flex items-center justify-center gap-3">
@@ -23,7 +23,7 @@ if(loading){
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
-      <div className="grid grid-cols-1
+      <div className="grid grid-cols-1 md:grid-cols-2
         lg:grid-cols-4 gap-6 px-10">
         {
       featureApp.map(app => <AppsCard key={app.id} app={app}></AppsCard>

@@ -5,7 +5,7 @@ import vector from '../../src/assets/fi_16076057.png'
 import { FaDownload } from "react-icons/fa6";
 const Build = () => {
     return (
-        <div className='bg-gray-200 flex justify-center flex-col'>
+        <div className='flex justify-center mt-9 flex-col'>
             <h2 className='text-center text-4xl font-bold'>We Build <br /> <span 
             className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] 
             text-transparent bg-clip-text'>Productive</span> Apps</h2>
@@ -14,12 +14,12 @@ const Build = () => {
                   digital experiences that truly make an impact.</p>
 
                   <div className="flex justify-center gap-4 mt-4">
-                    <button className="btn "> <img className='h-6 w-6' src={vector} alt="" />          
+                    <a href='https://play.google.com/store/apps' target='_blank' className="btn "> <img className='h-6 w-6' src={vector} alt="" />          
                       Google Play
-                    </button>
-                    <button className="btn "> <img className='h-6 w-6' src={group} alt="" />                   
+                    </a>
+                    <a href='https://www.apple.com/lae/app-store/' target='_blank' className="btn "> <img className='h-6 w-6' src={group} alt="" />                   
                       App Store
-                    </button>
+                    </a>
                   </div>
                   <div className='flex justify-center mt-7'>
                     <img src={hero} alt="" />

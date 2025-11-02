@@ -6,11 +6,11 @@ const AppsCard = ({app}) => {
     const {image,title,ratingAvg,downloads}=app;
 
     return (
-        <div className='w-full'>
+        <div className=''>
     <div className=" h-full bg-base-100 w-full rounded-xl shadow-sm overflow-hidden
         hover:scale-105 transition ease-in-out">
-  <figure className="px-5 pt-5 w-full ">
-    <img className="rounded-xl w-full object-cover  "
+  <figure className="px-4 flex w-full justify-center pt-5  ">
+    <img className="rounded-xl h-full object-cover  "
       src={image}
       alt="None"
        />

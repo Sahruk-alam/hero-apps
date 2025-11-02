@@ -8,7 +8,7 @@ import { MdInstallDesktop } from "react-icons/md";
 const NavBar = () => {
     return (
        <div>
-        <div className="navbar bg-base-100 shadow-sm p-3">
+        <div className="navbar bg-base-100 px-6 shadow-sm p-3">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -27,7 +27,7 @@ const NavBar = () => {
       </ul>
     </div>
    <Link to='/' className='flex'> <img className='h-8 w-8' src={logo} alt="" />
-    <a className="text-lg">Hero.io</a></Link>
+    <h2 className="text-lg">Hero.io</h2> </Link>
   </div>
   <div className="navbar-center hidden md:flex">
     <ul className="menu menu-horizontal px-1">
