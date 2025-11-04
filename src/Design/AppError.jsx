@@ -1,18 +1,19 @@
 import React from 'react';
+
+import AppNot from './AppNot';
 import NavBar from '../component/navbar/Navbar';
 import Footer from '../component/footer/footer';
-import NotFound from './NotFound';
-
-const ErrorPage = () => {
+const AppError = () => {
     return (
-        <div className=''>
-            <NavBar/>
+        
+        <div >
+           
             <div className='flex  justify-center'>
-                <NotFound/>
+                <AppNot/>
             </div>
-            <Footer/>
+            
         </div>
     );
 };
 
-export default ErrorPage;
+export default AppError;

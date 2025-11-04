@@ -5,13 +5,16 @@ import ErrorPage from "../../Design/ErrorPage";
 import Home from "../../Design/Home";
 import Installation from "../../Design/Installation";
 import MainLayout from "../layout/MainLayout";
+import DetailsApp from "../../Design/DetailsApp";
+import AppError from "../../Design/AppError";
 
 
 const route= createBrowserRouter([
   {
 path:'/',
 element: <MainLayout/>,
-errorElement:<ErrorPage/>,
+ errorElement:<ErrorPage/>,
+ loadingElement: <h2>Loading...please wait</h2>,
 children:[
  {
    index:true,
@@ -25,7 +28,16 @@ children:[
   path: '/installation',
   element:<Installation/>
  },
+ {
+  path: '/apps/:id',
+  element: <DetailsApp/>
+ },
+ 
 ]
 },
+{
+    path: '*',
+    element: <ErrorPage /> 
+}
 ])
 export default route

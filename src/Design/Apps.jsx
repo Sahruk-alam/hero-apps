@@ -13,15 +13,12 @@ const Apps = () => {
     const searchApps= trim ? apps.filter(app=>
         app.title.toLocaleLowerCase().includes(trim)) 
         : apps;
-        console.log(searchApps)
     if(loading){
         return <Loading count={16}></Loading>
     }
-    // if(searchApps.length==0){
-    //     return <h2>Not found</h2>
-    // }
+    
     return (
-        <div className='bg-gray-200 '>
+        <div className='bg-gray-200'>
             <h2 className='text-2xl md:text-5xl mt-11 font-bold flex items-center 
             justify-center gap-3 text-center'>Our All Applications<SiAppstore /></h2>
             <p className='text-center my-3 mb-9 text-gray-500'>
@@ -43,7 +40,7 @@ const Apps = () => {
          <NoApps></NoApps>
            </div>
                                
-        :(<div className='grid grid-cols-1 lg:grid-cols-4 gap-6 px-10 my-6'>
+        :(<div className='grid grid-cols-1  lg:grid-cols-4 gap-6 px-10 my-6'>
     {
     searchApps.map(app=><AppsCard key={app.id} app={app}></AppsCard>)
     }
