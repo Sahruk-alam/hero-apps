@@ -6,24 +6,11 @@ import { Link, Navigate } from 'react-router';
 
 const AppsCard = ({app}) => {
     const {id,image,title,ratingAvg,downloads}=app;
-  //  const handleApps=()=>{
-    //  Navigate(`/apps/${id}`)
-//     const handleSelected=()=>{
-//   const list =JSON.parse(localStorage.getItem('Selected'))
-//  let updateData=[];
-//   if(list){
-//     const isDuplicate=list.some(p=>p.id===app.id)
-//     if(isDuplicate) return alert('Already set data')
-//     updateData=[...list,app]
-//   }
-//   else{
-//     updateData.push(app)
-//   }
-//   localStorage.setItem('Selected',JSON.stringify(updateData))
-//  }
+
+  
 
     
-  //  }
+   
     return (
         <Link to={`/apps/${id}`} className='cursor-pointer'>
     <div className=" h-full bg-base-100 w-full rounded-xl shadow-sm overflow-hidden

@@ -23,7 +23,7 @@ const DetailsApp = () => {
 
     const {image,title,downloads,description,companyName,ratings,
         ratingAvg,reviews,size}=app ;
-    console.log(app)
+    // console.log(app)
    
 const reversedRatings = [...ratings].reverse();
 
@@ -31,6 +31,24 @@ const handleInstall=()=>{
   setInstalled(true)
     toast(<><FcApproval /> Yahoo {title} installed successfully!</>)
 }
+  const handleSelected=()=>{
+  const list =JSON.parse(localStorage.getItem('Selected'))
+ let updateData=[];
+  if(list){
+    const isDuplicate=list.some(p=>p.id===app.id)
+    if(isDuplicate) return alert('Already set data')
+    updateData=[...list,app]
+  }
+  else{
+    updateData.push(app)
+  }
+  localStorage.setItem('Selected',JSON.stringify(updateData))
+ }
+const handleInstallAndSelect = () => {
+    if (installed) return
+    handleSelected()
+    handleInstall()
+  }
     return (
  <div className='bg-gray-100 px-6 md:px-20 min-h-screen '>
        <div className="">
@@ -65,9 +83,9 @@ const handleInstall=()=>{
     <div className="card-actions ">
      <button
   aria-disabled={installed}
-  onClick={!installed ? handleInstall : undefined}
-  className={`btn btn-lg ${installed ? 'btn-success pointer-events-none opacity-100' : 'btn-primary'}`}
->
+  
+  onClick={!installed ? handleInstallAndSelect : undefined}
+  className={`btn btn-lg ${installed ? 'btn-success pointer-events-none opacity-100' : 'btn-primary'}`}>
   {installed ? 'Installed' : `Install Now (${size})`}
 </button>
     </div>
