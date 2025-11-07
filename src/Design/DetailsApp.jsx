@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useApp from '../component/Hook/jsonHook';
 import { useParams } from 'react-router';
 import iconRating from '../assets/icon-ratings.png'
@@ -15,8 +15,13 @@ const DetailsApp = () => {
  const [installed,setInstalled]=useState(false)
     const {id}=useParams()
     const {apps,loading}=useApp();
-    const app=apps.find(p=>String(p.id)===id) 
-    
+ const app=apps.find(p=>String(p.id)===id) 
+    useEffect(() => {
+  if (!app) return;
+  const installedApps = JSON.parse(localStorage.getItem("Selected")) || [];
+  setInstalled(installedApps.some(p => p.id === app.id));
+}, [app]);
+
     if(loading) return <AnimationLoading/>
 
    if (!app) {
@@ -29,9 +34,21 @@ const DetailsApp = () => {
    
 const reversedRatings = [...ratings].reverse();
 
+
+
+
+
 const handleInstall=()=>{
   setInstalled(true)
     toast(<><FcApproval /> Yahoo {title} installed successfully!</>)
+  const installedApps = JSON.parse(localStorage.getItem("Selected")) || [];
+  const already = installedApps.some(p => p.id === app.id);
+
+  if (!already) {
+    installedApps.push(app);
+    localStorage.setItem("Selected", JSON.stringify(installedApps));
+  }
+
 }
   const handleSelected=()=>{
   const list =JSON.parse(localStorage.getItem('Selected'))
@@ -60,14 +77,14 @@ const handleInstallAndSelect = () => {
       src={image}
       alt={title} />
   </figure>
-  <div className="md:ml-25 ">
+  <div className="md:ml-25 mt-7 md:mt-0 ">
     <h2 className="font-bold text-4xl">{title}</h2>
     <p className='text-2xl my-2.5 text-gray-600'>{companyName}</p>
     <hr className='my-3' />
 
     <div className='flex my-5 gap-9'>
       <div>
-      <img className='h-10' src={iconDownload} alt="Download Icon" />
+      <img className='h-10 ' src={iconDownload} alt="Download Icon" />
       <p>Download</p>
       <h3 className="text-2xl font-bold">{downloads}</h3>
     </div>
@@ -85,7 +102,6 @@ const handleInstallAndSelect = () => {
     <div className="card-actions ">
      <button
   aria-disabled={installed}
-  
   onClick={!installed ? handleInstallAndSelect : undefined}
   className={`btn btn-lg ${installed ? 'btn-success pointer-events-none opacity-100' : 'btn-primary'}`}>
   {installed ? 'Installed' : `Install Now (${size})`}

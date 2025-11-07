@@ -29,7 +29,7 @@ const Build = () => {
                   </div>
                   <div className='p-6 text-center bg-gradient-to-r from-[#632EE3] to-[#9F62F2] '>
         <h2 className='text-white md:text-5xl text-2xl font-semibold'>Trusted by Millions, Built for You</h2>
-       <div className='flex flex-col md:flex-row gap-10 my-7 justify-center'>
+       <div className='flex flex-col md:flex-row gap-10 my-7 items-center justify-center'>
 
         <div className='text-white gap-5 flex items-center text-center'>
           

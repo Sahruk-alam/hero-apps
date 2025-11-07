@@ -36,13 +36,12 @@ const Installation = () => {
     localStorage.setItem('Selected',JSON.stringify(updateData))
     setSelect(updateData) 
  }
-//  if(!select.length) return <p>No data available</p>
   if(loading){
         return <AnimationLoading/>;
     }
     return (
         <div className='bg-gray-200 min-h-screen'>
-            <h2 className='text-5xl text-center mt-11 flex items-center
+            <h2 className='text-4xl md:text-5xl text-center mt-11 flex items-center
              justify-center gap-3 font-bold'>Your Installed Apps<GrInstall /></h2>
             <p className='text-center my-3 mb-9 px-2 md:px-0 text-gray-500'>
                 Explore All Trending Apps on the Market developed by us</p>

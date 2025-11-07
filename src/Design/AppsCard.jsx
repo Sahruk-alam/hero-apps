@@ -18,7 +18,7 @@ const AppsCard = ({app}) => {
       alt="None"
        />
   </figure>
-  <div className="pb-6 px-5 ">
+  <div className="pb-6   px-5 ">
     <h2 className="font-bold text-2xl text-center my-5">{title}</h2>
   <div className='flex justify-between '>
     <h2 className='btn rounded-xl text-green-600'>
