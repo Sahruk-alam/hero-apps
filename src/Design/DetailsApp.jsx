@@ -9,13 +9,15 @@ import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line,
 import { toast } from 'react-toastify';
 import { FcApproval } from "react-icons/fc";
 import AppError from './AppError';
+import AnimationLoading from '../component/Hook/AnimationLoading';
+
 const DetailsApp = () => {
  const [installed,setInstalled]=useState(false)
     const {id}=useParams()
     const {apps,loading}=useApp();
     const app=apps.find(p=>String(p.id)===id) 
     
-    if(loading) return <p>Loading.......</p>
+    if(loading) return <AnimationLoading/>
 
    if (!app) {
     return <AppError />;

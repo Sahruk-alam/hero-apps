@@ -7,14 +7,15 @@ import Installation from "../../Design/Installation";
 import MainLayout from "../layout/MainLayout";
 import DetailsApp from "../../Design/DetailsApp";
 import AppError from "../../Design/AppError";
+import AnimationLoading from "../Hook/AnimationLoading";
 
 
 const route= createBrowserRouter([
   {
 path:'/',
 element: <MainLayout/>,
- errorElement:<ErrorPage/>,
- loadingElement: <h2>Loading...please wait</h2>,
+errorElement:<ErrorPage/>,
+hydrateFallbackElement:<AnimationLoading/>,
 children:[
  {
    index:true,

@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { GrInstall } from "react-icons/gr";
 import download from '../assets/icon-downloads.png'
 import rating from '../assets/icon-ratings.png'
+import useApp from '../component/Hook/jsonHook';
+import AnimationLoading from '../component/Hook/AnimationLoading';
 const Installation = () => {
+    const {loading}=useApp();
+  
     const [sortOrder, setSortOrder] = useState('none');
     const [select,setSelect]=useState([])
 
@@ -14,8 +18,6 @@ const Installation = () => {
     })
             setSelect(saveList)  
         }
-     
-        
     },[])
 
        const order=(()=>{
@@ -35,7 +37,9 @@ const Installation = () => {
     setSelect(updateData) 
  }
 //  if(!select.length) return <p>No data available</p>
-
+  if(loading){
+        return <AnimationLoading/>;
+    }
     return (
         <div className='bg-gray-200 min-h-screen'>
             <h2 className='text-5xl text-center mt-11 flex items-center

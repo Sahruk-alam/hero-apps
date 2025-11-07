@@ -5,12 +5,13 @@ import AppsCard from "./AppsCard";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { NavLink } from "react-router";
 import Loading from "../component/Hook/Loading";
+import AnimationLoading from "../component/Hook/AnimationLoading";
 const Home = () => {
   const { apps,loading } = useApp();
   const featureApp = apps.slice(0, 8);
-if(loading){
-  return <Loading></Loading>
-}
+  if(loading){
+  return <AnimationLoading></AnimationLoading>
+  }
   return (
     <div className="bg-gray-100 ">
       <Build></Build>

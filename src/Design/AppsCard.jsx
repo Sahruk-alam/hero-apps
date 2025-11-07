@@ -3,17 +3,14 @@ import download from '../assets/icon-downloads.png'
 import rating from '../assets/icon-ratings.png'
 import DetailsApp from './DetailsApp';
 import { Link, Navigate } from 'react-router';
+import AnimationLoading from '../component/Hook/AnimationLoading';
 
 const AppsCard = ({app}) => {
     const {id,image,title,ratingAvg,downloads}=app;
 
-  
-
-    
-   
     return (
         <Link to={`/apps/${id}`} className='cursor-pointer'>
-    <div className=" h-full bg-base-100 w-full rounded-xl shadow-sm overflow-hidden
+    <div className=" h-full bg-base-100 w-full  rounded-xl shadow-sm overflow-hidden
         hover:scale-105 transition ease-in-out">
   <figure className="px-4 flex w-full justify-center pt-5  ">
     <img className="rounded-xl h-full object-cover  "

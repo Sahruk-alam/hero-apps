@@ -7,7 +7,7 @@ const ErrorPage = () => {
     return (
         <div className=''>
             <NavBar/>
-            <div className='flex  justify-center'>
+            <div className='flex mt-12 justify-center'>
                 <NotFound/>
             </div>
             <Footer/>

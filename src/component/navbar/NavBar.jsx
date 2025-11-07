@@ -5,10 +5,11 @@ import contribute from '../../assets/contribute.png'
 import { IoHomeOutline } from "react-icons/io5";
 import { FaAppStore } from "react-icons/fa";
 import { MdInstallDesktop } from "react-icons/md";
+const activeClass = ({ isActive }) => isActive ? 'underline underline-offset-6 w-fit decoration-2' : '';
 const NavBar = () => {
     return (
        <div>
-        <div className="navbar bg-base-100 px-6 shadow-sm p-3">
+        <div className="navbar bg-base-100 px-8 shadow-sm p-3">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -31,11 +32,9 @@ const NavBar = () => {
   </div>
   <div className="navbar-center hidden md:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><NavLink to='/'><IoHomeOutline />Home</NavLink></li>
-      <li>
-           <NavLink to='/apps'><FaAppStore />Apps</NavLink>
-      </li>
-      <li><NavLink to='/installation'><MdInstallDesktop />Installation</NavLink></li>
+      <li ><NavLink to='/' className={activeClass} ><IoHomeOutline />Home</NavLink></li>
+      <li ><NavLink to='/apps' className={activeClass}><FaAppStore />Apps</NavLink></li>
+      <li ><NavLink to='/installation' className={activeClass}><MdInstallDesktop />Installation</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
