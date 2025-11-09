@@ -41,6 +41,7 @@ const Installation = () => {
     }
     return (
         <div className='bg-gray-200 min-h-screen'>
+            <title>Hero Apps installation</title>
             <h2 className='text-4xl md:text-5xl text-center mt-11 flex items-center
              justify-center gap-3 font-bold'>Your Installed Apps<GrInstall /></h2>
             <p className='text-center my-3 mb-9 px-2 md:px-0 text-gray-500'>

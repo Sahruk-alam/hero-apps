@@ -36,6 +36,7 @@ const Apps = () => {
     
     return (
         <div className='bg-gray-200 relative min-h-screen'>
+            <title>Hero Apps </title>
             <h2 className='text-2xl md:text-5xl mt-11 font-bold flex items-center 
             justify-center gap-3 text-center'>Our All Applications<SiAppstore /></h2>
             <p className='text-center my-3 mb-9 text-gray-500'>

@@ -5,6 +5,7 @@ const AppNot = () => {
     return (
 
             <div className='mt-12'>
+                <title>Error apps</title>
             <img src={appError} className='md:ml-20 px-5 md:px-0' alt="404 Not Found" />
             <h2 className='font-semibold text-center text-5xl mt-8 text-[#001931]'>
                 OPPS!! APP NOT FOUND</h2>

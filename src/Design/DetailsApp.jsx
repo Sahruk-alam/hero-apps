@@ -34,10 +34,6 @@ const DetailsApp = () => {
    
 const reversedRatings = [...ratings].reverse();
 
-
-
-
-
 const handleInstall=()=>{
   setInstalled(true)
     toast(<><FcApproval /> Yahoo {title} installed successfully!</>)
@@ -70,6 +66,7 @@ const handleInstallAndSelect = () => {
   }
     return (
  <div className='bg-gray-100 px-6 md:px-20 min-h-screen '>
+  <title>{title}</title>
        <div className="">
     <div className="card md:card-side  mt-10 md:px-12 shadow-sm">
   <figure>
