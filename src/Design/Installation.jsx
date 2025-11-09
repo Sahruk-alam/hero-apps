@@ -64,12 +64,12 @@ const Installation = () => {
         order.map(p=>
     <div key={p.id} className="card mb-6 card-side bg-base-100 rounded-4xl shadow-lg">
   <figure>
-    <img className='max-w-40 ml-3 p-4 object-cover'
+    <img className='max-w-40 ml-3 p-3.5 object-cover'
       src={p.image}
       alt={p.name} />
   </figure>
-  <div className="card-body">
-    <h2 className="card-title justify-center md:justify-start">{p.title}</h2>
+  <div className="card-body md:gap-12">
+    <h2 className="card-title justify-center mb- md:justify-start">{p.title}</h2>
     
     <div className='md:flex md:gap-9 md:text-left items-center'>
          <h2 className=' rounded-xl flex gap-2 text-green-600'>
